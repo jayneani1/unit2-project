@@ -1,68 +1,111 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project-2
 
-## Available Scripts
+# Project Overview
 
-In the project directory, you can run:
+## Project Links
 
-### `npm start`
+- [add your github repo link]()
+- [add your deployment link]()
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Description
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+I will be recreating the Petfinder website. I like the idea of doing an in depth search aspect to search for certain attributes of animals to adopt. 
 
-### `npm test`
+## API
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://www.petfinder.com/developers/v2/docs/
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+"animals": [
+        {
+            "id": 120,
+            "organization_id": "NJ333",
+            "url": "https://www.petfinder.com/dog/spot-120/nj/jersey-city/nj333-petfinder-test-account/?referrer_id=d7e3700b-2e07-11e9-b3f3-0800275f82b1",
+            "type": "Dog",
+            "species": "Dog",
+            "breeds": {
+                "primary": "Akita",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": null,
+                "secondary": null,
+                "tertiary": null
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Charts
+- Priority matrix: https://res.cloudinary.com/dnxx8igwb/image/upload/v1585328274/5EE2C61B-490F-4519-ABE9-4BD73419CB41_fvcsul.jpg
+- React architecture: https://res.cloudinary.com/dnxx8igwb/image/upload/v1585328357/2008E5A5-7912-409B-819C-B7E7227319A9_ivyl8l.jpg
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Wireframes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Landing Page: https://res.cloudinary.com/dnxx8igwb/image/upload/v1585328350/6B3C67C2-4B95-4C1A-BEB7-18892B98883E_m4fjvs.jpg
+- Search Page: https://res.cloudinary.com/dnxx8igwb/image/upload/v1585274009/0E7356B0-98F8-463B-920C-9579510D1E8B_idgjld.jpg
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### MVP/PostMVP - 5min
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-### Code Splitting
+#### MVP EXAMPLE
+- Find and use external api 
+- Render data on page 
+- Allow user to interact with the page
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### PostMVP EXAMPLE
 
-### Analyzing the Bundle Size
+- Create a map to click on regions where person went missing
+- Resources for people to help out
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Components
+##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-### Making a Progressive Web App
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+| Component | Description | 
+| --- | :---: |  
+| App | This will make the initial data pull and include React Router| 
+| Layout | This will present the information in a way that is pleasing to the eye |
+| Map | Map of the world thats interactive |
+| Header | This will render the header include the nav | 
+| Carousel | Shows different aspects of site |
+| Footer | This will render the header include the nav | 
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-### Deployment
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Adding Form | H | 3hrs |
+| Working with API | H | 3hrs|
+| CSS and HTML | H | 5 hrs | 2 hrs
+|React animations | L | 2 hrs |
+| In depth search aspect | H | 5 hrs |
+| Creating map of the U.S. in React | L | 5 hrs | 
+|Carousel| L| 2.5 hrs |
+| Find photos and resources | H | 1.5 hrs | 1 hr |
+| Research | H | 1.5 hrs | 
+| Forms | H | 2 hrs |
+| Total | H | 31.5 hrs |
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Additional Libraries
+ Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
 
-### `npm run build` fails to minify
+## Code Snippet
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
+
