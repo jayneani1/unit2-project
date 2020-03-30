@@ -19,6 +19,6 @@ class Pet extends React.Component {
       </div>
     );
   }
-}
+} 
 
 export default Pet;
