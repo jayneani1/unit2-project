@@ -85,19 +85,19 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs |
-| Working with API | H | 3hrs| 5 hrs |
-| CSS and HTML | H | 5 hrs | 2 hrs
+| Working with API | H | 3hrs| 9 hrs | 
+| CSS and HTML | H | 5 hrs | 2 hrs |
 |React animations | L | 2 hrs |
-| In depth search aspect | H | 5 hrs |
+| In depth search aspect | H | 5 hrs | 2 hrs|
 | Creating map of the U.S. in React | L | 5 hrs | 
-|Carousel| L| 2.5 hrs |
+|Carousel| L| 2.5 hrs | 1 hr |
 | Find photos and resources | H | 1.5 hrs | 1 hr |
 | Research | H | 1.5 hrs | 
-| Forms | H | 2 hrs |
-| Total | H | 31.5 hrs |
+| Forms | H | 2 hrs | 2 hrs |
+| Total | H | 31.5 hrs | 17 hrs |
 
-## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+## Additional Notes
+ After trying to get the API to work and reaching out to multiple resources, Doug discovered that the petfinder api wouldnt work because it reset every 20 minutes. I had to start my project over from scratch today. 
 
 ## Code Snippet
 

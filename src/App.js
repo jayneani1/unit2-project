@@ -1,5 +1,5 @@
   
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Main } from './Main';
@@ -10,25 +10,55 @@ import { NoMatch } from './NoMatch';
 import { Layout } from './Components/Layout';
 import pf from "petfinder-client";
 import Pet from "./Pet"
+import Search from './Search';
+import Random from './Random'
 
 
 const App = () => {
-  const App_SECRET="zkHIDM4bKmBSyEhI6bZlmATxWGAQJ0dmxHw2PU5j";
-  const APP_KEY = "yR0OMcncKcTmfuAuyREFp6tZowt6gDsynub72rliOeMnpuNCrj";
 
+  return (
+  <div className="App">
+     <form className="search-form">
+      <input className="search-bar" type="text"/>
+      <button className="search-button" type="submit"> 
+      Search
+      </button>
+    </form>
+    <Random />
+  </div>
+  )
+  }
 
-const [Pet, setPet] = useState(0);
+export default App;
+
+/*
+const App = () => {
+  //const APP_ID: "the-cocktail-db.p.rapidapi.com"
+	//const APP_KEY: "eb3065d7e6msh853958a644ba891p1bfa55jsn052d79c1de99";
+
+const [Drink, setDrink] = useState(0);
 
 useEffect( () => {
-  getPets()
+  getDrinks()
 }, []);
 
-const getPets = async () => {
-  const response = await fetch(`https://api.petfinder.com/v2/{CATEGORY}/{ACTION}?{parameter_1}={value_1}&{parameter_2}={value_2}
-  `);
-  const data = response.json
-  console.log(data);
-}
+function App() {
+  const [random, setRandom] = useState("")
+    useEffect((launches) => {
+        const randomUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+        const makeAPICall = async () => {
+          const res = await fetch(randomUrl);
+          const json = await res.json();
+          setRandom(json);
+        };
+        makeAPICall();
+      }, []);
+  
+  
+  return (
+        <h1>{random.strDrink}</h1>
+  )
+  }
 
 
   return (
@@ -39,6 +69,10 @@ const getPets = async () => {
       Search
       </button>
     </form>
+    {recipes.map(recipe => (
+      <Random />
+
+    ))}
   </div>
   );
 };
@@ -48,7 +82,10 @@ export default App;
 
 
 
-   {/*         class MyCarousel extends React.Component {
+
+
+
+  /*      class MyCarousel extends React.Component {
   constructor() {
     super()
     this.state = { value: 0 };
@@ -116,4 +153,4 @@ export default App;
 </Card>
     </div>
     );
-    </div> */}
+    </div> */
