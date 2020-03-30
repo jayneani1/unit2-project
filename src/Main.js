@@ -6,7 +6,9 @@ import styled from 'styled-components';
 
 export const Main = () => {
     return (
-        <div>
+        <div> 
+
+          
             class MyCarousel extends React.Component {
   constructor() {
     super()
