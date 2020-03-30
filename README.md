@@ -85,7 +85,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs |
-| Working with API | H | 3hrs|
+| Working with API | H | 3hrs| 5 hrs |
 | CSS and HTML | H | 5 hrs | 2 hrs
 |React animations | L | 2 hrs |
 | In depth search aspect | H | 5 hrs |

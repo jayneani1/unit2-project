@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+  
+import React, { Component, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Main } from './Main';
@@ -6,90 +7,113 @@ import { About } from './About';
 import { Footer } from './Footer';
 import { NavigationBar } from './Components/Header';
 import { NoMatch } from './NoMatch';
-import { Search } from './Search'; 
 import { Layout } from './Components/Layout';
 import pf from "petfinder-client";
 import Pet from "./Pet"
 
-const petfinder = pf({
-  key: process.env.yR0OMcncKcTmfuAuyREFp6tZowt6gDsynub72rliOeMnpuNCrj,
-  secret: process.env.zkHIDM4bKmBSyEhI6bZlmATxWGAQJ0dmxHw2PU5j
-});
- 
+
+const App = () => {
+  const App_SECRET="zkHIDM4bKmBSyEhI6bZlmATxWGAQJ0dmxHw2PU5j";
+  const APP_KEY = "yR0OMcncKcTmfuAuyREFp6tZowt6gDsynub72rliOeMnpuNCrj";
 
 
-class App extends Component {
+const [Pet, setPet] = useState(0);
 
-    constructor(props) {
-        super(props);
-      
-        this.state = {
-          pets: []
-        };
-      }
-      // replace cDM
-      componentDidMount() {
-        petfinder.pet
-          .find({ location: "Austin, TX", output: "full" })
-          .then(data => {
-            let pets;
-            if (data.petfinder.pets && data.petfinder.pets.pet) {
-              if (Array.isArray(data.petfinder.pets.pet)) {
-                pets = data.petfinder.pets.pet;
-              } else {
-                pets = [data.petfinder.pets.pet];
-              }
-            } else {
-              pets = []
-            }
-            this.setState({
-              pets
-            });
-          });
-      }
-    // inside class, above render
-componentDidMount() {
-    petfinder.breed.list({ animal: "dog" }).then(console.log, console.error);
-  }
-    render() {
-        return (
-            <>
-                <NavigationBar />
-                <Layout>
-                <Router>
-                <Switch>
-                    <Route exact path='/' component={Main} />
-                    <Route path='/About' component={About} />
-                    <Route path='/Search' component={Search} />
-                    <Route component={NoMatch} />
-                </Switch>
-                </Router>
-                </Layout>
+useEffect( () => {
+  getPets()
+}, []);
 
-                <h1>Adopt Me!</h1>
-                <pre>
-  <code>{JSON.stringify(this.state, null, 2)}</code>
-</pre>
-      {this.state.pets.map(pet => {
-        let breed;
-        if (Array.isArray(pet.breeds.breed)) {
-          breed = pet.breeds.breed.join(", ");
-        } else {
-          breed = pet.breeds.breed;
-        }
-        return (
-          <Pet
-            animal={pet.animal}
-            key={pet.id}
-            name={pet.name}
-            breed={breed}
-          />
-        );
-      })}
-   
-            </>
-        );
-    }
+const getPets = async () => {
+  const response = await fetch(`https://api.petfinder.com/v2/{CATEGORY}/{ACTION}?{parameter_1}={value_1}&{parameter_2}={value_2}
+  `);
+  const data = response.json
+  console.log(data);
 }
 
+
+  return (
+  <div className="App">
+    <form className="search-form">
+      <input className="search-bar" type="text" />
+      <button className="search-button" type="submit"> 
+      Search
+      </button>
+    </form>
+  </div>
+  );
+};
+
 export default App; 
+
+
+
+
+   {/*         class MyCarousel extends React.Component {
+  constructor() {
+    super()
+    this.state = { value: 0 };
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange(value) {
+    this.setState({ value });
+  }
+
+  render() {
+    return (
+    <div>
+      <input
+        type="number"
+        value={this.state.value}
+        onChange={e => this.onChange(parseInt(e.target.value || 0))}
+      />
+      <Carousel
+        value={this.state.value}
+        onChange={this.onChange}
+        slides={[
+          (<img src='https://res.cloudinary.com/dnxx8igwb/image/upload/v1585516985/shutterstock_280679357-1600x600_vyarqx.jpg' />),
+          (<img src='https://res.cloudinary.com/dnxx8igwb/image/upload/v1585516939/photo-1518791841217-8f162f1e1131_x9ejla.jpg' />),
+          (<img src='https://res.cloudinary.com/dnxx8igwb/image/upload/v1585516950/can-dogs-sense-a-good-person_training_ouoawr.jpg' />),
+        ]}
+        arrows
+        clickToChange
+      /> 
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    {/*  HERE IMPORT FROM API TO CREATE 3 CARDS FOR RANDOM ANIMALS
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+     HERE IMPORT FROM API TO CREATE 3 CARDS FOR RANDOM ANIMALS
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+     HERE IMPORT FROM API TO CREATE 3 CARDS FOR RANDOM ANIMALS
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+     HERE IMPORT FROM API TO CREATE 3 CARDS FOR RANDOM ANIMALS
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+    </div>
+    );
+    </div> */}
