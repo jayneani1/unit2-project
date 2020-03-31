@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     align-items: center;
 }
@@ -6,6 +10,16 @@ body {
     min-height: 100vh;
     background-color: white;
     align-content: center;
+  }
+
+  body {
+    font-family: 'Oswald', sans-serif
+  }
+  .heading {
+    font-weight: 700;
+  }
+  .subheading {
+    font-weight: 300;
   }
   
  /* .searchBar {
