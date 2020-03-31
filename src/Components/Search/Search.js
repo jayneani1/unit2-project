@@ -1,4 +1,4 @@
-
+import './Search.css'
 import React, {useState, useEffect} from "react"
 
 
@@ -44,7 +44,7 @@ const [submit, setSubmit]= useState("")
         )
       })
       return (
-        <div>
+        <div className="SearchBar">
             <form onSubmit={handleSubmit}>
                 <input 
                     placeholder="Enter Alcohol"

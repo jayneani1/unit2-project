@@ -1,3 +1,42 @@
 body {
-    color: blue;
-} 
+    align-items: center;
+}
+
+.App {
+    min-height: 100vh;
+    background-color: white;
+    align-content: center;
+  }
+  
+ /* .searchBar {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  /*.searchBar {
+    background: lightblue;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+  }
+  
+  .Rec {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .head {
+    text-align: center;
+    color: white;
+    padding: 2em;
+    text-decoration: underline;
+  }
+  
+  .Top {
+    text-align: center;
+    color: white;
+    padding: 1em;
+  } */

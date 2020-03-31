@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import './Random.css'
 
 function Random() {
     const [random, setRandom] = useState("")
@@ -12,14 +13,20 @@ function Random() {
           makeAPICall();
         }, []);
     
-    console.log('asdasdsa', random)
+    console.log('test', random)
     if (!random.drinks) {
         return <></>
     }
     return (
-        <div style={{paddingLeft:'200px'}}>
-          <h1>{random.drinks[0].strDrink}</h1>
-          <h2>{random.drinks[0].strInstructions}</h2>
+        <div className="card">
+          <h1 className="titleDrink">{random.drinks[0].strDrink}</h1>
+          <ul className="ingredient">
+            <li>{random.drinks[0].strIngredient1}</li>
+            <li>{random.drinks[0].strIngredient2}</li>
+            <li>{random.drinks[0].strIngredient3}</li>
+            <li>{random.drinks[0].strIngredient4}</li>
+          </ul>
+          <h2 className="instruc">{random.drinks[0].strInstructions}</h2>
           <img alt = "" src={random.drinks[0].strDrinkThumb} />
         </div>
     )
