@@ -7,7 +7,7 @@
     margin: 20px;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(45deg, #6504B5 0%, #BBBBBB 100%);
+    background-image: linear-gradient(45deg, #3B0D10 0%, #BBBBBB 100%);
     align-items: center;
     min-width: 40%;
     padding: 1em; 
@@ -37,7 +37,7 @@
 }
 
 
-img {
+.randomImage {
     border-radius: 20%;
     width: 150px;
     height: 150px;

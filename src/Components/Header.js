@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   .navbar {
-    background-color: #6504B5;
+    background-color: #3B0D10;
   }
 
   .navbar-brand, .navbar-nav .nav-link {
@@ -24,7 +24,7 @@ const Styles = styled.div`
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
         <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-        <Nav.Item><Nav.Link href="/About">About</Nav.Link></Nav.Item>
+        <Nav.Item><Nav.Link href="/Footer">Contact</Nav.Link></Nav.Item>
         <Nav.Item><Nav.Link href="/Search">Search</Nav.Link></Nav.Item>
       </Nav>
     </Navbar.Collapse>

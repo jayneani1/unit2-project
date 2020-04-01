@@ -9,33 +9,14 @@
 
 ## Project Description
 
-I will be recreating the Petfinder website. I like the idea of doing an in depth search aspect to search for certain attributes of animals to adopt. 
+I will be creating a site that shows you random drink recipes where you can search for what type of alcohol you would like in your drink so that you can practice your bartending skills while the world is quarantined. 
 
 ## API
 
-https://www.petfinder.com/developers/v2/docs/
+https://rapidapi.com/theapiguy/api/the-cocktail-db
 
 
-```
-"animals": [
-        {
-            "id": 120,
-            "organization_id": "NJ333",
-            "url": "https://www.petfinder.com/dog/spot-120/nj/jersey-city/nj333-petfinder-test-account/?referrer_id=d7e3700b-2e07-11e9-b3f3-0800275f82b1",
-            "type": "Dog",
-            "species": "Dog",
-            "breeds": {
-                "primary": "Akita",
-                "secondary": null,
-                "mixed": false,
-                "unknown": false
-            },
-            "colors": {
-                "primary": null,
-                "secondary": null,
-                "tertiary": null
-
-```
+![](https://media.discordapp.net/attachments/690290052483252569/694283814125437029/unknown.png)
 
 ## Charts
 - Priority matrix: https://res.cloudinary.com/dnxx8igwb/image/upload/v1585328274/5EE2C61B-490F-4519-ABE9-4BD73419CB41_fvcsul.jpg
@@ -48,7 +29,6 @@ https://www.petfinder.com/developers/v2/docs/
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 - Landing Page: https://res.cloudinary.com/dnxx8igwb/image/upload/v1585328350/6B3C67C2-4B95-4C1A-BEB7-18892B98883E_m4fjvs.jpg
-- Search Page: https://res.cloudinary.com/dnxx8igwb/image/upload/v1585274009/0E7356B0-98F8-463B-920C-9579510D1E8B_idgjld.jpg
 
 
 ### MVP/PostMVP - 5min
@@ -86,14 +66,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs |
 | Working with API | H | 3hrs| 9 hrs | 
-| CSS and HTML | H | 5 hrs | 2 hrs |
+| CSS and HTML | H | 5 hrs | 5 hrs |
 |React animations | L | 2 hrs |
 | In depth search aspect | H | 5 hrs | 2 hrs|
 | Creating map of the U.S. in React | L | 5 hrs | 
 |Carousel| L| 2.5 hrs | 1 hr |
 | Find photos and resources | H | 1.5 hrs | 1 hr |
-| Research | H | 1.5 hrs | 
+| Research | H | 1.5 hrs | 2 hrs |
 | Forms | H | 2 hrs | 2 hrs |
+|Redoing WS | 1 hr | 1 hr | 1 hr |
 | Total | H | 31.5 hrs | 17 hrs |
 
 ## Additional Notes

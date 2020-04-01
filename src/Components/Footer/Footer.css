@@ -1,10 +1,10 @@
 .Footer{
-    background-color: #6504B5;
+    background-color: #3B0D10;
     color: #BBBBBB;
     text-align: center;
     };
 
-img {
-    width: 75px;
-    height: 75px;
+.icon {
+    width: 50px;
+    height: 50px;
 }

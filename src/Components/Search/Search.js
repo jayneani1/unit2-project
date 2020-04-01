@@ -35,6 +35,7 @@ const [submit, setSubmit]= useState("")
         return <></>
     }
     console.log('checking state', drinks.drinks)
+    
     const drinksMap = drinks.drinks.map((drink, i) => {
       return (
           <div key={i}>
@@ -55,7 +56,7 @@ const [submit, setSubmit]= useState("")
 
                 <input type='submit' value='Submit' />
             </form>
-          {drinksMap}
+          {drinksMap} 
           </div>
       )
     }

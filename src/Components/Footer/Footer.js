@@ -12,7 +12,7 @@ const Footer = () => {
                         </div>
                         <div className="column-has-text-right">
                             <a className='icon' href="https://www.linkedin.com/in/jayneaniello/">
-                                <img src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" /> </a>
+                                <img className="iconImg" src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" /> </a>
                         </div>
                     </div>
                 </div>
