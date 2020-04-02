@@ -28,7 +28,7 @@ const App = () => {
           render={props => <Random />}
         />
     </switch>
-    <Random />
+   {/*} <Random /> */}
     <Footer />
   </div>
   )

@@ -3,3 +3,9 @@
     height: 600px;
     align-content: center;
 }
+
+@media (max-width: 600px) {
+    .CItem {
+        height: 365px;
+    }
+}

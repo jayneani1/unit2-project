@@ -25,7 +25,7 @@ const Styles = styled.div`
       <Nav className="ml-auto">
         <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
         <Nav.Item><Nav.Link href="/Search">Search</Nav.Link></Nav.Item>
-        <Nav.Item><Nav.Link href="/Footer">Contact</Nav.Link></Nav.Item> 
+        <Nav.Item><Nav.Link href="/Random">Featured</Nav.Link></Nav.Item> 
       </Nav>
     </Navbar.Collapse>
     </Navbar>

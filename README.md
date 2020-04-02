@@ -42,8 +42,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### PostMVP EXAMPLE
 
-- Create a map to click on regions where person went missing
-- Resources for people to help out
+- Create multiple searches so people can search by other ingredients
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -64,17 +63,16 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Deploying | 1 hr | 30 mins |
+| Deploying | 1 hr | 30 mins | 1 hr |
 | Working with API | H | 3hrs| 9 hrs | 10 hrs |
-| CSS and HTML | H | 5 hrs | 5 hrs |
-| In depth search aspect | H | 5 hrs | 2 hrs|
-| Creating map of the U.S. in React | L | 5 hrs | 
+| CSS and HTML | H | 5 hrs | 5 hrs | 10 hrs |
+| In depth search aspect | H | 5 hrs | 2 hrs| 3 hrs |
 |Carousel| L| 2.5 hrs | 1 hr | 1.5 hr |
 | Find photos and resources | H | 1.5 hrs | 1 hr |
-| Research | H | 1.5 hrs | 2 hrs |
-| Forms | H | 2 hrs | 2 hrs |
+| Research | H | 1.5 hrs | 2 hrs | 3 hrs |
+| Forms | H | 2 hrs | 2 hrs | 2 hrs |
 |Redoing WS | 1 hr | 1 hr | 1 hr |
-| Total | H | 31.5 hrs | 17 hrs |
+| Total | H | 31.5 hrs | 32.5 hrs |
 
 ## Additional Notes
  - After trying to get the API to work and reaching out to multiple resources, Doug discovered that the petfinder api wouldnt work because it reset every 20 minutes. I had to start my project over from scratch today. 
