@@ -1,13 +1,3 @@
-.SearchBar {
-    width: 100%;
-    border: none;
-    padding: 10px;
-  }
-
-  form {
-      width: 90%;
-      align-content: center;
-     padding-right: 100px;
-     padding-left: 250px;
-     border-radius: 20%;
-  }
+body {
+    align-content: center;
+}

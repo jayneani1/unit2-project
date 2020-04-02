@@ -5,7 +5,7 @@ import React, {useState, useEffect} from "react"
 function Search() {
     const [search, setSearch]= useState("brandy")
     const [drinks, setDrinks]= useState([])
-const [submit, setSubmit]= useState("")
+    const [submit, setSubmit]= useState("")
     
 
     
@@ -35,12 +35,40 @@ const [submit, setSubmit]= useState("")
         return <></>
     }
     console.log('checking state', drinks.drinks)
-    
+
     const drinksMap = drinks.drinks.map((drink, i) => {
       return (
           <div key={i}>
-              <h1>{drink.strDrink}</h1>
-             <img alt = "" src={drink.strDrinkThumb} />
+            <div className="card" style={{
+          alignItems: "center",
+          flexWrap: "wrap",
+          display:"flex", 
+          borderRadius: "10px",
+          boxShadow: "0px 5px 20px rgb(71,71,71)",
+          margin: "20px",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          backgroundImage: "linear-gradient(45deg, #3B0D10 0%, #BBBBBB 100%)",
+          alignItems: "center",
+          minWidth: "40%",
+          padding: "1em",
+          width: "400px",
+          height: "500px",
+          color: "white"}}>
+              <h1 className="searchTitle">{drink.strDrink}</h1>
+              <ul className="ingredientSearch">
+            <li>{drinks.strIngredient1}</li>
+            <li>{drinks.strIngredient2}</li>
+            <li>{drinks.strIngredient3}</li>
+            <li>{drinks.strIngredient4}</li>
+          </ul>
+             <img style={{width: '150px', height: '150px',
+             borderRadius: '20%'}}
+             alt = "" src={drink.strDrinkThumb} />
+          {/*<h1 className="titleDrink">{drink.strDrink}</h1> */}
+          <h2 className="instruc">{drinks.strInstructions}</h2>
+          <img className="searchImage" alt = "" src={drinks.strDrinkThumb} />
+        </div>
            </div>
         )
       })
@@ -56,6 +84,7 @@ const [submit, setSubmit]= useState("")
 
                 <input type='submit' value='Submit' />
             </form>
+            <h2>Suggestions</h2>
           {drinksMap} 
           </div>
       )

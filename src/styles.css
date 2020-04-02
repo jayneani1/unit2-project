@@ -4,6 +4,7 @@ html {
 
 body {
     align-items: center;
+    font-family: 'Oswald', sans-serif
 }
 
 .App {
@@ -12,45 +13,9 @@ body {
     align-content: center;
   }
 
-  body {
-    font-family: 'Oswald', sans-serif
-  }
   .heading {
     font-weight: 700;
   }
   .subheading {
     font-weight: 300;
   }
-  
- /* .searchBar {
-    min-height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  
-  /*.searchBar {
-    background: lightblue;
-    border: none;
-    padding: 10px 20px;
-    color: black;
-  }
-  
-  .Rec {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .head {
-    text-align: center;
-    color: white;
-    padding: 2em;
-    text-decoration: underline;
-  }
-  
-  .Top {
-    text-align: center;
-    color: white;
-    padding: 1em;
-  } */

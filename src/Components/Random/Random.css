@@ -16,6 +16,13 @@
     color: white;
 }
 
+h2 {
+    color: grey;
+}
+
+/* styling and walkthrough for basis of page from Dev Ed on Youtube
+https://www.youtube.com/watch?v=U9T6YkEDkMo*/
+
 /*@media (min-width: 501px) {
     .card {
         width: 400px;
@@ -42,7 +49,7 @@
     width: 150px;
     height: 150px;
     align-content: center;
-}
+} 
 
 /*
 .searchBar {

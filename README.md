@@ -64,13 +64,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs |
-| Working with API | H | 3hrs| 9 hrs | 
+| Deploying | 1 hr | 30 mins |
+| Working with API | H | 3hrs| 9 hrs | 10 hrs |
 | CSS and HTML | H | 5 hrs | 5 hrs |
-|React animations | L | 2 hrs |
 | In depth search aspect | H | 5 hrs | 2 hrs|
 | Creating map of the U.S. in React | L | 5 hrs | 
-|Carousel| L| 2.5 hrs | 1 hr |
+|Carousel| L| 2.5 hrs | 1 hr | 1.5 hr |
 | Find photos and resources | H | 1.5 hrs | 1 hr |
 | Research | H | 1.5 hrs | 2 hrs |
 | Forms | H | 2 hrs | 2 hrs |
@@ -78,7 +77,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 31.5 hrs | 17 hrs |
 
 ## Additional Notes
- After trying to get the API to work and reaching out to multiple resources, Doug discovered that the petfinder api wouldnt work because it reset every 20 minutes. I had to start my project over from scratch today. 
+ - After trying to get the API to work and reaching out to multiple resources, Doug discovered that the petfinder api wouldnt work because it reset every 20 minutes. I had to start my project over from scratch today. 
+ - I wanted a featured drink page but the api only allowed for one random to show up unless you paid for their Patreon. 
 
 ## Code Snippet
 
