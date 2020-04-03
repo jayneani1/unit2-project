@@ -23,7 +23,8 @@ function Random() {
         <div className="sectionRandom" style= {{ display: "flex", alignContent: "center", 
         justifyContent: "center",
         alignItems: "center",
-        paddingBottom: "125px"}}>
+        paddingBottom: "125px",
+        paddingTop: "50px"}}>
           
         <div className="card">
         <h3>Featured Cocktail</h3>
