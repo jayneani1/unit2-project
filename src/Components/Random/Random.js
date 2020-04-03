@@ -21,8 +21,8 @@ function Random() {
 
       return (
         <div className="sectionRandom" style= {{ display: "flex", alignContent: "center", 
-        margingLeft: "800px",
-        paddingLeft: "500px",
+        justifyContent: "center",
+        alignItems: "center",
         paddingBottom: "125px"}}>
           
         <div className="card">

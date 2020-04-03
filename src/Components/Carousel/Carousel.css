@@ -1,7 +1,6 @@
 .CItem {
     width: 100%;
     height: 660px;
-    align-content: center;
 }
 
 @media (max-width: 600px) {

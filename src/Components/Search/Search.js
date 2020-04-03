@@ -47,7 +47,7 @@ function Search() {
                alignItems: "center",
                minWidth: "40%",
                 padding: "1em",
-                width: "400px",
+                width: "300px",
                height: "300px",
                color: "white"}}>
            <h1 className="searchTitle">{drink.strDrink}</h1>
@@ -64,10 +64,10 @@ function Search() {
         <div className="SearchBar" style= {{ display: "flex", 
              flexDirection: "column",
               alignContent: "center", 
-              margingLeft: "800px",  
-             paddingLeft: "500px"}}> 
-          <form onSubmit={handleSubmit} style= {{paddingLeft: "125px",
-               paddingTop: "25px"}}>
+              justifyContent: "center",
+              alignItems: "center"}}> 
+          <form onSubmit={handleSubmit} style= {{
+               padding: "25px"}}>
                 <input 
                     placeholder="Enter Alcohol"
                     type="text"
@@ -77,8 +77,7 @@ function Search() {
 
                 <input type='submit' value='Submit' />
             </form>
-            <h2 style= {{paddingLeft: "150px",
-          paddingTop: "25px"}}>Suggestions</h2>
+            <h2>Suggestions</h2>
           {drinksMap} 
           </div>
       )
