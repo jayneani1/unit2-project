@@ -4,8 +4,8 @@
 
 ## Project Links
 
-- [add your github repo link]()
-- [add your deployment link]()
+- https://github.com/jayneani1/unit2-project
+- https://shakeitup-drinks.netlify.com/
 
 ## Project Description
 
