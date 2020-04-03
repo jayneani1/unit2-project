@@ -65,16 +65,20 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Deploying | 1 hr | 30 mins | 1 hr |
 | Working with API | H | 3hrs| 9 hrs | 13 hrs |
-| CSS and HTML | H | 5 hrs | 5 hrs | 12 hrs |
+| CSS and HTML | H | 5 hrs | 5 hrs | 13 hrs |
 | In depth search aspect | H | 5 hrs | 2 hrs| 3 hrs |
 |Carousel| L| 2.5 hrs | 1 hr | 1.5 hr |
 | Find photos and resources | H | 1.5 hrs | 1 hr |
 | Research | H | 1.5 hrs | 2 hrs | 3 hrs |
 | Forms | H | 2 hrs | 2 hrs | 2 hrs |
 |Redoing WS | 1 hr | 1 hr | 1 hr |
-| Total | H | 31.5 hrs | 37.5 hrs |
+| Total | H | 31.5 hrs | 38.5 hrs |
 
-## Additional Notes
+## Additional Libraries
+
+- React Bootstrap https://react-bootstrap.github.io/
+
+## Issues
  - After trying to get the API to work and reaching out to multiple resources, Doug discovered that the petfinder api wouldnt work because it reset every 20 minutes. I had to start my project over from scratch today. 
  - I wanted a featured drink page but the api only allowed for one random to show up unless you paid for their Patreon. 
  - I could not get the styling correct for all size windows. I tried for hours to make it work and spoke to Jared, but it didn't. 

@@ -47,7 +47,7 @@ function Search() {
                alignItems: "center",
                minWidth: "40%",
                 padding: "1em",
-                width: "300px",
+                width: "350px",
                height: "300px",
                color: "white"}}>
            <h1 className="searchTitle">{drink.strDrink}</h1>
