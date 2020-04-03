@@ -1,3 +1,14 @@
-body {
-    align-content: center;
+.SearchBar {
+    display: flex;
+}
+
+@media only screen and(max-width: 400px) {
+    .SearchBar {
+        display: flex;
+        flex-direction:column;
+        align-Content: left; 
+        padding: auto;
+        margin: auto;
+
+    }
 }

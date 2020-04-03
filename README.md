@@ -64,27 +64,44 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Deploying | 1 hr | 30 mins | 1 hr |
-| Working with API | H | 3hrs| 9 hrs | 10 hrs |
-| CSS and HTML | H | 5 hrs | 5 hrs | 10 hrs |
+| Working with API | H | 3hrs| 9 hrs | 13 hrs |
+| CSS and HTML | H | 5 hrs | 5 hrs | 12 hrs |
 | In depth search aspect | H | 5 hrs | 2 hrs| 3 hrs |
 |Carousel| L| 2.5 hrs | 1 hr | 1.5 hr |
 | Find photos and resources | H | 1.5 hrs | 1 hr |
 | Research | H | 1.5 hrs | 2 hrs | 3 hrs |
 | Forms | H | 2 hrs | 2 hrs | 2 hrs |
 |Redoing WS | 1 hr | 1 hr | 1 hr |
-| Total | H | 31.5 hrs | 32.5 hrs |
+| Total | H | 31.5 hrs | 37.5 hrs |
 
 ## Additional Notes
  - After trying to get the API to work and reaching out to multiple resources, Doug discovered that the petfinder api wouldnt work because it reset every 20 minutes. I had to start my project over from scratch today. 
  - I wanted a featured drink page but the api only allowed for one random to show up unless you paid for their Patreon. 
+ - I could not get the styling correct for all size windows. I tried for hours to make it work and spoke to Jared, but it didn't. 
+ - I discovered the api for search doesn't give all the ingredients and instructions like the random did. 
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+  <div className="App">
+    <NavigationBar />
+    <switch>
+    <Route
+          exact path='/'
+          render={props => <CarouselPage {...props}/>}
+        />
+    <Route
+          path='/search'
+          render={props => <Search /> }
+        />
+    <Route
+          path='/random'
+          render={props => <Random />}
+        />
+    </switch>
+    <Footer />
+  </div>
 ```
 

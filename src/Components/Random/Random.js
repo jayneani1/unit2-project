@@ -20,10 +20,14 @@ function Random() {
     }
 
       return (
-        <div className="sectionRandom" style= {{ alignContent: "center"}}>
-          <h2>Featured Cocktail</h2>
+        <div className="sectionRandom" style= {{ display: "flex", alignContent: "center", 
+        margingLeft: "800px",
+        paddingLeft: "500px",
+        paddingBottom: "125px"}}>
+          
         <div className="card">
-          <h1 className="titleDrink">{random.drinks[0].strDrink}</h1>
+        <h3>Featured Cocktail</h3>
+          <h4 className="titleDrink">{random.drinks[0].strDrink}</h4>
           <ul className="ingredient">
             <li>{random.drinks[0].strIngredient1}</li>
             <li>{random.drinks[0].strIngredient2}</li>

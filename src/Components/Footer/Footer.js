@@ -14,7 +14,7 @@ const Footer = () => {
                             <a className='icon' href="https://www.linkedin.com/in/jayneaniello/">
                                 <img
                                style={{ width: "50px",
-                            margin: "10px" }}
+                               margin: "10px" }}
                                className="iconImg" src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" /> </a>
                         </div>
                     </div>
