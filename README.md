@@ -83,6 +83,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
  - I wanted a featured drink page but the api only allowed for one random to show up unless you paid for their Patreon. 
  - I could not get the styling correct for all size windows. I tried for hours to make it work and spoke to Jared, but it didn't. 
  - I discovered the api for search doesn't give all the ingredients and instructions like the random did. 
+ - The carousel works on my c drive fine, but deployed it's messed up. 
 
 ## Code Snippet
 
